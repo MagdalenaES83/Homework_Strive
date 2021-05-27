@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <style>
+
+body {
+    background-color: rgb(170, 170, 170);
+    color: black;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+h1 {
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 20px;
+    color: #41153e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+#month-container {
+    border-style: solid;
+    display: inline-block;
+    width: 60%;
+    border-color: #0c0b0b;
+    border-width: 3px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.day {
+    background-color: grey;
+    display: inline-block;
+    width: 12.1%;
+    min-height: 64px;
+    text-align: center;
+    padding-top: 32px;
+    font-size: larger;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(14 14 14);
+    border-radius: 8px;
+    margin: 3px;
+}
+
+.day.chosen {
+    border-color: #888;
+    background-color: #444;
+}
+
+.day.has-meetings{
+    border-bottom-color: #00db71;
+}
+
+/* MEETINGS */
+
+#meetings-container {
+    vertical-align: top;
+    display: inline-block;
+    width: 35%;
+    min-height: 200px;
+    text-align: center;
+}
+#meetings-container h2 {
+    color: #00db71;
+    border-bottom: solid 3px #292929;
+    padding-bottom: 16px;
+    padding-top: 24px;
+}
+
+#meeting-creation{
+    padding: 4px;
+}
+
+#meeting-creation input{
+    height: 32px;
+    background-color: #0f0f0f;
+    border: solid 3px #00db71;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: larger;
+}
+
+#meeting-time{
+    width: 80px;
+}
+
+#meeting-description{
+    width: 200px;
+}
+
+#meeting-creation input[type="button"]{
+    margin-left: 10px;
+    width: 92px;
+    height: 54px;
+    color: rgb(32, 32, 32);
+    background-color: #00db71;
+    font-weight: bolder;
+}
+
+#meetings-list li{
+    text-align: left;
+    font-size: larger;
+}
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+    <script src="index.js"></script>
+    <h1>Bingo Game </h1>
+
+
+    <div id="month-container">
+        <!-- Days will be created inside here -->
+            
+        <div class="day">1</div>
+        
+    </div>
+
+    <div id="meetings-container">
+        <h2>Chosen numbers </h2>
+
+        <div id="meeting-creation">
+            
+            <input type="text" id="meeting-description" placeholder="insert description" />
+            
+        </div>
+
+        <ul id="meetings-list">
+            <!-- Meetings will be shown here -->
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
