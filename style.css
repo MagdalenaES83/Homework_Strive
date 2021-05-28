@@ -1,0 +1,68 @@
+body{
+width: max-content;
+text-align: center;
+
+}
+
+ol {  font-size: x-large;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;    
+}
+
+p {
+    margin: 10%;
+}
+
+h1 { 
+    font-size: 80px;
+    text-align: center;
+padding-top: 80px;
+margin-bottom: 10px;
+color: rebeccapurple;}
+
+
+table {
+        border-radius: 4px;
+    background-color: white;
+}
+
+ tr, th {
+    border: solid green;
+    text-align: center;
+    padding: 15px;
+    margin: 10%;
+    border-radius: 15px;
+    }
+
+  td, tr {
+    border: dotted rgb(40, 112, 68);
+    text-align: center;
+    padding: 15px;
+    margin: 10%;
+    border-radius: 15px;
+    }
+
+    footer{
+font-size: medium;
+font-weight: bolder;
+color: mediumblue;
+  }
+
+  a {color: mediumpurple;
+font-style: italic;}
+.ex14{
+    border-color: yellowgreen;
+}
+.ex14a { background-color: tomato;}
+
+.ex17
+{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.ex18 {
+visibility: hidden;
+
+}
