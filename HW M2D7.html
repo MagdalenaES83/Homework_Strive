@@ -32,15 +32,22 @@
         */
 
         div .jumbotron h1{            background-color: chartreuse;                }  
-        nav a{ background-color: chartreuse; }
-        div .jumbotron p>a{background-color: chartreuse;}
-        div  .blog-post > p:first-of-type{background-color: chartreuse;}
+        nav a{ background-color: rgb(255, 0, 0); }
+        div .jumbotron p.lead a{background-color: rgb(0, 238, 255);}
+        div  .blog-post :nth-child(2){background-color: rgb(225, 0, 255);}
         nav a:nth-child(2n){background-color: yellow;}
+/* nav a:nth-last-of-type(2n +1){} */
+
         div .blog-post > p:last-of-type{background-color: orange;}
+
         div .p-4 li:first-of-type{background-color: chartreuse;}
 
         div .blog-post > p:nth-of-type(2) {background-color: blue;}
-        footer >pS [a~="Back to top"] {background-color: chartreuse;}
+/* second post .blog-pos:nth-child(3).blog-post-meta a */
+/* .blog-post: nth-child(3)*/
+
+
+       p:last-of-type>a {background-color: sienna;}
         .blog-footer{background-color: salmon;}
 
 
@@ -146,9 +153,14 @@
           <a class="p-2 text-muted" href="#">Health</a>
           <a class="p-2 text-muted" href="#">Style</a>
           <a class="p-2 text-muted" href="#">Travel</a>
+        
+       
         </nav>
-      </div>
 
+        
+      </div>
+     
+ <button onclick="NewLink()">Click for New Link</button>
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">
@@ -166,7 +178,7 @@
           </p>
         </div>
       </div>
-
+      <p id="NewBG()"></p>
       <div class="row mb-2">
         <div class="col-md-6">
           <div
@@ -360,6 +372,7 @@
           </div>
           <!-- /.blog-post -->
 
+
           <div class="blog-post">
             <h2 class="blog-post-title">New feature</h2>
             <p class="blog-post-meta">
@@ -463,54 +476,150 @@
     <script>
       /*
         JS Exercises
-        EX11) Write a function to add a new link into the navbar
-        EX12) Write a function to change the color of the main title
-        EX13) Write a function to change the background of the jumbotron
-        EX14) Write a function to remove all the links under "Elsewhere"
-        EX15) Write a function to change the column size for heading in jumbotron
-        EX16) Write a function to remove the "Search" magnifying glass icon
-        EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
-        EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
+        EX11) Write a function to add a new link into the navbar */
+
+
+const NewLink = function(){
+   const addLink = document.querySelector("nav") 
+    addLink.innerHTML += `<a class="p-2 text-muted" href="#">NEW</a>`}
+   
+   
+    console.log(NewLink())
+
+/*    EX12) Write a function to change the color of the main title */NewLink
+
+const NewBG = function(){
+ const newColor = document.querySelector("div .jumbotron h1")
+ newColor.style.color ="khaki"
+}
+NewBG()
+
+/*EX13) Write a function to change the background of the jumbotron*/
+
+const NewBG2 = function(){
+    const newBack = document.querySelector(".jumbotron");
+    newBack.style.backgroundColor ="white"
+    }
+NewBG2()
+
+/* EX14) Write a function to remove all the links under "Elsewhere"*/
+
+const removeLinks =function(){
+const link = document.querySelector("aside > div:nth-child(3) > ol")
+link.remove()
+
+}
+removeLinks()
+
+/*    EX15) Write a function to change the column size for heading in jumbotron */
+
+const column = function(){
+const changeSize = document.querySelector("div.jumbotron> div> h1")
+changeSize.classList.remove("col-md-6)";
+changeSize.classList.add("col-12")
+
+}
+column()
+
+
+/* EX16) Write a function to remove the "Search" magnifying glass icon */column
+const iconSeach = function() {
+const icon = document.querySelectorAll("div > a. text-muted > svg")
+icon.remove()
+}
+
+iconSeach()
+
+
+
+/* EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post */ 
+const cut50 = function() {
+const firstPar = document.querySelectorAll("div .blog-post > h2 + p")
+
+
+for (const p of cut50) {
+    p.innerText = p.innerText.substring(50)
+}
+
+cut50()
+
+
+/* EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title) */
+
+const NewerButton = function() {
+let guzik = document.querySelector("div .blog-pagination")
+let newGuzik = document.createElement("div")
+newPost.classList.add("blog-pagination")
+
+
+
+}
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+     
+        
+       
+    
+       
+        
+       
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
     </script>
-  <!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+></body>
 </html>
