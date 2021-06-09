@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+<style>
+
+div.container{
+    padding-top: 50px;
+}
+
+        div.row{
+        border: solid black 1px;
+        border-radius: 15px;
+
+    }
+.col {
+    background-color: rgb(44, 165, 44);
+    height: 400px;
+    text-align: center;
+   padding: 100px ;
+   display: flex;
+   border-right: solid black;
+   border-width: 1px;
+   
+}
+ div.col-md-3{
+     text-align: center;
+     background-color: lightskyblue;
+     font: optional;
+     font-weight: bold;
+     font-size: xx-large;
+     
+     
+     
+ }
+
+
+ p.text-muted{
+     text-align:unset;
+     padding-top: 300px;
+
+
+     
+ }
+div.row-hr{
+    text-align: center;
+    
+}
+
+div.col-1{
+    background-color: rgb(207, 218, 112);
+    height: 132px;
+    width: 375px;
+    max-width: none;
+    text-align: center;
+    padding: 50px;
+    ;
+}
+div.col-2{
+    background-color: rgb(211, 124, 74);
+        height: 132px;
+        width: 375px;
+        max-width: none;
+        padding: 50px;
+
+    }
+
+div.col-3{
+    background-color: rgb(180, 70, 62);
+        height: 132px;
+        width: 375px;
+        max-width: none;
+        padding: 50px;
+        
+}
+div.ex2{
+    background-color: cadetblue;
+   
+}
+.card-title{
+    height: 80px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 15px;
+    
+    
+}
+
+
+#ex2{
+    background-color:none;
+    
+    border:none;
+    justify-content: center;
+
+}
+
+.h1, h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+h5{
+    text-align: center;
+}
+
+
+.btn-primary{
+       
+    height: 50px;
+    width: 80%;
+}
+
+.col-lg-3{
+    max-width: none;
+}
+
+div#ex3.row{
+    border: none;
+    padding-left: none;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+.img {
+    position: relative;
+}
+
+
+h1.ex4{
+    text-align: left;
+    margin-bottom: 30px;
+}
+</style>
+
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-dark bg-primary">
+    
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+
+        <div class="d-none">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+    
+      </nav>
+
+
+<div class="h1">    Exercise 1 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col md-6 " >
+             <span id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus nemo labore ad commodi quae molestiae assumenda exercitationem maiores illo ipsam quisquam, dolore officia cupiditate dolor nostrum magnam non? Beatae. </span>
+             <span class="slash">/</span>
+              
+        </div>
+        <div class="col-md-3">
+              
+              <p class="text-muted">text </p>
+        </div>
+        <div class="col-md-4">
+            <div class="row"> 
+                <div class="row-hr">
+                     <div class="col-1">1</div> 
+                     <div class="col-2">2</div>                    
+                     <div class="col-3">3</div> 
+                </div>
+              
+             </div>
+        </div>
+    </div>
+
+
+    <div class="h1">    Exercise 2 </div>
+<div class="container">
+    
+        <div class="row" id="ex2">
+            
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="card w-100" style="width: 18rem;">
+                
+                <h3 class="card-title">FREE 
+                  <h5>  <br >0 £ per mo
+                    <br >10 users 
+                    <br >2 GB of s
+                    <br >Email support
+                    <div ></div>
+                    <button type="button" class="btn btn-primary">Sign up for free</button>
+                            
+                </h5>                                  </h3>
+                
+            </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="card w-100" style="width: 18rem;">
+                
+                <h3 class="card-title">PRO 
+                  <h5>  <br >15 £ per mo
+                    <br >20 users 
+                    <br >10 GB of s
+                    <br >Email support
+                    <div ></div>
+                    <button type="button" class="btn btn-primary">Get started</button>
+                            
+                </h5>                                  </h3>
+                
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="card w-100" style="width: 18rem;">
+                
+                <h3 class="card-title">Enterprise 
+                  <h5>  <br >29 £ per mo
+                    <br >30 users 
+                    <br >15 GB of s
+                    <br >Email support
+                    <div ></div>
+                    <button type="button" class="btn btn-primary">Contact us</button>
+                            
+                </h5>                                  </h3>
+                
+            </div>
+        </div>
+</div>
+
+
+<div class="h1">    Exercise 3</div>
+<div class="container">
+    <div class="row" id="ex3">
+        
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="flex-column-reverse" style="width: 18rem;">
+                <div class="card-video">  <iframe width="100%"  src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>  Ulver 
+                <br > 
+                
+                <button type="button" class="btn3 ">View</button>
+                <button type="button" class="btn3 ">Edit</button>
+                        
+                </h5>                                  
+                </div>
+
+            </div>
+        </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+        <div class="flex-column" style="width: 18rem;">
+            <div class="card-video">  <iframe width="100%"  src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h5>  Ulver 
+                <br > 
+                
+                <button type="button" class="btn3 ">View</button>
+                <button type="button" class="btn3 ">Edit</button>
+                        
+            </h5>                                 
+            
+        </div>
+    </div>
+    </div>
+
+    <div class="flex-column" style="width: 18rem;">
+        <div class="card-video">  <iframe width="100%"  src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h5>  Ulver 
+            <br > 
+            
+            <button type="button" class="btn3 ">View</button>
+            <button type="button" class="btn3 ">Edit</button></h5>   
+                
+        </div>
+    </div>
+
+
+
+
+</div></div></div>
+
+
+<div class="row" id="ex3">
+        
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+        <div class="flex-column-reverse" style="width: 18rem;">
+            <div class="card-video">  <iframe width="100%"  src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>  Ulver 
+            <br > 
+            
+            <button type="button" class="btn3 ">View</button>
+            <button type="button" class="btn3 ">Edit</button>
+                    
+            </h5>                                  
+            </div>
+
+        </div>
+    </div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
+    <div class="flex-column" style="width: 18rem;">
+        <div class="card-video">  <iframe width="100%"  src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h5>  Ulver 
+            <br > 
+            
+            <button type="button" class="btn3 ">View</button>
+            <button type="button" class="btn3 ">Edit</button>
+                    
+        </h5>                                 
+        
+    </div>
+</div>
+</div>
+
+<div class="flex-column" style="width: 18rem;">
+    <div class="card-video">  <iframe width="100%"  src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h5>  Ulver 
+        <br > 
+        
+        <button type="button" class="btn3 ">View</button>
+        <button type="button" class="btn3 ">Edit</button></h5>   
+            
+    </div>
+</div>
+
+
+
+
+</div></div></div>
+
+
+
+
+
+
+
+<div class="h1">    Exercise 4</div>
+
+
+<div class="jumbotron">
+    <div class="container">
+        <div class= "col-22">
+            <h1 class="ex4">Page Heading Secondary Text</h1>
+            <img height="300" src=" https://linagro.tn/images/entries/700x300/spring-700x300.png">
+  </div></div>
+</div>
+
+
+
+
+
+
+
+
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
