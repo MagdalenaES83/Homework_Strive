@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style> 
+
+body{
+    background-color: black;
+    color:floralwhite;    
+}
+
+.jumbotron{
+  color: black;
+  
+}
+.img{
+  position: flex;
+  align-items: center;
+  
+}
+.picture {
+  box-sizing:content-box;
+  width: 250px;
+  height: auto;
+}
+ 
+
+
+nav{
+  position: relative;
+}
+
+.card-img{
+  width: 250px;
+  height: 250px;
+}
+
+.card{
+    display: inline-block;
+    background-color: black;
+    color:blanchedalmond;
+    margin-bottom: 50px;
+    
+    
+}
+
+div p { font-size: small;}
+
+
+
+img {
+  height: 250px;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+}
+ .worst{
+  background-color: rgb(32, 29, 29);
+  color:white;
+}
+
+.list-group-item {
+  background-color: black;
+}
+.card-img {
+max-width: fit-content;}
+
+h1{
+  text-align: center;
+  padding: 25px;
+}
+
+footer{
+  
+  width: 100%;
+  background-color: rgb(25, 19, 31);
+  text-align: center;
+  font-size: larger;
+  color: azure;
+}
+
+
+.picture {
+  box-sizing:content-box;
+  width: 130px;
+  height: auto;
+}
+ 
+
+.album-badge {
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  width: 33%;
+}
+
+
+th.tlheader, tr{
+  color: black;
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 39px;
+    z-index: 98;
+    padding: 21px;
+    background-color: hsla(5, 76%, 62%, .8)}
+
+    .cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: hsla(5, 76%, 62%, .8);
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+button.btn.btn-primary{
+  color: darkmagenta;
+  font-weight: bolder;
+  font-size: xx-large;
+  box-shadow: gainsboro;
+  margin-left: 5%;
+  padding: 15px;
+  
+
+}
+
+button.btn.btn-secondary{
+  color: darkmagenta;
+  font-weight: bolder;
+  font-size: xx-large;
+  box-shadow: gainsboro;
+  margin-left: 5%;
+  padding: 15px;
+  
+
+}
+
+
+div.modal-body{
+  color:red
+}
+
+</style>
+
+</head>
+<body>
+<!--exercise 1-->
+  <nav aria-label="breadcrumb ">
+    <ol class="breadcrumb" id="breadcrumb">
+      <li class="breadcrumb-item"><a class="nav-link" href="#top">TOP Albums</a></li>
+      <li class="breadcrumb-item"> <a class="nav-link" href="#FUN"> Top funnies covers </a></li>
+      <li class="breadcrumb-item"> <a class="nav-link" href="#worst"> Worst albums </a></li>
+      <li class="breadcrumb-item"><a class="nav-link" href="#tapestry">Tapestry</a></li>
+      <li class="breadcrumb-item"><a class="nav-link" href="#footer"> Contact</a></li>
+    
+    </ol>
+  </nav>
+
+
+   
+    
+<br>
+<!-- EXERCISE 2
+        Create a Jumbotron section with a quick explanation / image of the website
+    -->
+    <div class="jumbotron">
+      <h1 class="display-4">Top my favorite albums !</h1>
+      <p class="lead">Little bit of text .</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <img src="https://wallpapers.com/images/high/teal-hd-dark-forest-wallpaper-wp1209821-i3l69hcn8sninvhw.jpg" alt="forest" width="80%" >
+    </div>
+
+
+<!-- EXERCISE 3
+        Foreach album in the favorite list, place the genre inside a badge
+    -->
+
+
+    <!-- EXERCISE 4
+        Foreach album in the favorite list, use the Bootstrap Card to contain it.
+        Use card layouts to format it in the best way possible.-->
+
+
+
+ <h1 id="top">TOP BEST  ALBUMS  </h1>
+
+<br>
+<main class = "container">
+<section class ="row">
+<div class="card col-sm-6 col-md-4 col-lg-3" >
+   
+    <img class ="card-img-top" class="cover" src="https://images-na.ssl-images-amazon.com/images/I/51SUWsbmnHL._SX466_.jpg"     alt="AL">
+    <img class="album-badge" src="/prime.svg" >
+
+    
+
+    
+    <div class="card-body">
+      <h5 class="card-title" class ="group">Led Zeppelin</h5>
+      <p class="card-text">ALbum was released on 8 November 1971 by Atlantic Records. </p>
+      <a href="https://www.google.com" class="btn btn-primary"class="button" >Google</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Opeth-Heritage.jpg/220px-Opeth-Heritage.jpg"    height="" alt="AL">
+    <img class="album-badge" src="/prime.svg" >
+    <div class="card-body">
+      <h5 class="card-title">Opeth</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore ratione, tenetur impedit temporibus eaque autem fugit tempora mollitia asperiores earum, perferendis, beatae est? Dignissimos eius maiores voluptatum voluptas. Suscipit. ALbum was released on 8 November 1971 by Atlantic Records. </p>
+      <a href="https://www.google.com" class="btn btn-primary"class="button">Google</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://img.discogs.com/0iI7seGrxLOR1YDe4ugjSFGN2fc=/fit-in/598x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1072918-1369001122-2590.jpeg.jpg"    height="" alt="AL">
+    <img class="album-badge" src="/prime.svg" >
+    <div class="card-body">
+      <h5 class="card-title">ULVER</h5>
+      <p class="card-text">ALbum was released on 8 November 1971 by Atlantic Records. </p>
+      <a href="https://www.google.com" class="btn btn-primary"class="button">Googlee</a>
+    </div>
+  </div>
+
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://44.media.tumblr.com/2b4c2c728964872d5134289fa4fa70ab/tumblr_njbr1sX0Mu1su17npo2_500.gif"    height="" alt="AL">
+    <img class="album-badge" src="/prime.svg" >
+    <div class="card-body">
+      <h5 class="card-title">Led Zeppelin</h5>
+      <p class="card-text">ALbum was released on 8 November 1971 by Atlantic Records. </p>
+      <a href="https://www.google.com" class="btn btn-primary" class="button">Google</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Ullver_Perdition.jpg/220px-Ullver_Perdition.jpg"    height="" alt="AL">
+    <img class="album-badge" src="/prime.svg" >
+    <div class="card-body">
+      <h5 class="card-title">ULVER</h5>
+      <p class="card-text">ALbum was released on 8 November 1971 by Atlantic Records. </p>
+      <a href="https://www.google.com" class="btn btn-primary" class="button">Google</a>
+    </div>
+  </div> </div>
+</section>
+</main>
+
+
+<!-- EXERCISE 5
+        Place the tracklist inside a Bootstrap table.
+        The row colors must be alternated.
+        Use a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+<section>
+  <table class="table-album ">
+    <h2>Blood Inside, Ulver</h2>
+    <h2><span class="mw-headline" id="Track_listing">Track listing</span>
+      <span class="mw-editsection"><span class="mw-editsection-bracket"></span>
+      <a href="/w/index.php?title=Blood_Inside&amp;action=edit&amp;section=3" title="Edit section: Track listing"></a>
+      <span class="mw-editsection-bracket"></span></span></h2>
+<table class="tracklist" style="display:block;border-spacing:0px"><tbody><tr><th class="tlheader" scope="col" style="width:2em;padding-left:10px;padding-right:10px;text-align:right;background-color:#eee"><abbr title="Number">No.</abbr></th><th class="tlheader" scope="col" style="width:100%;text-align:left;background-color:#eee">Title</th><th class="tlheader" scope="col" style="width:4em;padding-right:10px;text-align:right;background-color:#eee">Length</th></tr><tr style="background-color:#fff"><th id="track1" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">1.</th><td style="vertical-align:top">"Dressed in Black"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td>
+  <td style="padding-right:10px;text-align:right;vertical-align:top">7:06</td></tr><tr style="background-color:#f7f7f7"><th id="track2" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">2.</th><td style="vertical-align:top">"For the Love of God"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td><td style="padding-right:10px;text-align:right;vertical-align:top">4:11</td></tr><tr style="background-color:#fff"><th id="track3" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">3.</th><td style="vertical-align:top">"Christmas"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td>
+    <td style="padding-right:10px;text-align:right;vertical-align:top">6:15</td></tr><tr style="background-color:#f7f7f7"><th id="track4" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">4.</th><td style="vertical-align:top">"Blinded by Blood"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td><td style="padding-right:10px;text-align:right;vertical-align:top">6:22</td></tr><tr style="background-color:#fff"><th id="track5" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">5.</th><td style="vertical-align:top">"It Is Not Sound"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td><td style="padding-right:10px;text-align:right;vertical-align:top">4:37</td></tr>
+    <tr style="background-color:#f7f7f7"><th id="track6" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">6.</th>
+      <td style="vertical-align:top">"The Truth"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td><td style="padding-right:10px;text-align:right;vertical-align:top">4:01</td></tr>
+    <tr style="background-color:#fff"><th id="track7" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">7.</th><td style="vertical-align:top">"In the Red"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td><td style="padding-right:10px;text-align:right;vertical-align:top">3:30</td></tr><tr style="background-color:#f7f7f7"><th id="track8" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">8.</th><td style="vertical-align:top">"Your Call"<span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td><td style="padding-right:10px;text-align:right;vertical-align:top">6:07</td></tr><tr style="background-color:#fff"><th id="track9" scope="row" style="padding-right:10px;text-align:right;vertical-align:top;font-weight:normal">9.</th><td style="vertical-align:top">"Operator" <span><button type="button" class="btn  btn-danger ml-5">delete</button></span></td>
+      <td style="padding-right:10px;text-align:right;vertical-align:top">3:36</td></tr><tr><th colspan="2" scope="row" style="padding:0"><span style="width:7.5em;float:right;padding-left:10px;background-color:#eee;margin-right:2px">Total length:</span></th>
+      <td style="padding:0 10px 0 0;text-align:right;background-color:#eee"><b>45:45</b></td></tr></tbody></table>
+<div>
+
+  <!--<div class="shadow p-3 mb-5 bg-white rounded"></div>-->
+
+  
+
+
+  
+ 
+<!-- EXERCISE 9
+        Add a button "Add Track" under the track list of the album. Add also a nice shadow transition when the button is hovered (with the box-shadow property)
+    -->
+</section>
+
+<!-- EXERCISE 6
+        Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
+        which you should also do for all the subsequent buttons you'll create.
+    -->
+
+
+<!-- EXERCISE 10
+        On "Add Track" button, open a new modal.
+        The modal shall contain a form with:
+        - Track number
+        - Track name
+        - Track length
+        - Track featuring
+        - Live Track (checkbox)
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+    
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Add Track 
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Track title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4> Track number <br>
+          - Track name<br>
+          - Track length<br>
+          - Track featuring<br>
+          - Live Track (checkbox)</h4>
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 id="FUN">TOP FUNNIES COVERS  </h1>
+
+<br>
+<main class = "container">
+<section class ="row">
+<div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top" class="cover" src=https://cdn.pocket-lint.com/r/s/320x/assets/images/134579-gadgets-feature-53-of-the-worst-album-covers-of-all-time-image22-sl1hcqpb5o.jpg?v1"    height="" alt="AL">
+    <div class="card-body">
+      <h5 class="card-title" class ="group">Going back to Miami</h5>
+      <p class="card-text">. </p>
+      <a href="#" class="button" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://e4p7c9i3.stackpathcdn.com/wp-content/uploads/2019/01/best-worst-album-covers-2.jpg?iv=260"    height="" alt="AL">
+    <div class="card-body">
+      <h5 class="card-title">Coluche</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore ratione, tenetur impedit temporibus eaque autem fugit tempora mollitia asperiores earum, perferendis, beatae est? Dignissimos eius maiores voluptatum voluptas. Suscipit. ALbum was released on 8 November 1971 by Atlantic Records. </p>
+      <a href="#" class="btn btn-primary" class="button">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://cdn.statically.io/img/www.musicnotes.com/now/wp-content/uploads/merle-evans.jpg?quality=80&f=auto"    height="" alt="AL">
+    <div class="card-body">
+      <h5 class="card-title">Circus in town</h5>
+      <p class="card-text"> </p>
+      <a href="#" class="btn btn-primary" class="button">Go somewhere</a>
+    </div>
+  </div>
+
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="https://worldwideinterweb.com/wp-content/uploads/2012/06/funny-rap-covers.jpg"    height="" alt="AL">
+    <div class="card-body">
+      <h5 class="card-title">Zip Zap rap</h5>
+      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quas nobis quis laboriosam, minus quam libero eligendi quisquam tempore dolores quos excepturi quo labore animi! Nihil, aliquid. Perspiciatis, saepe enim.</p>
+      <a href="#" class="btn btn-primary" class="button">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-6 col-md-4 col-lg-3" >
+    <img class ="card-img-top"  src="http://www.earthlymission.com/wp-content/uploads/2016/07/knorkator-hasenchartbreaker.jpg"    height="" alt="AL">
+    <div class="card-body">
+      <h5 class="card-title">Knorkator</h5>
+      <p class="card-text">. </p>
+      <a href="#" class="btn btn-primary" class="button">Go somewhere</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<main>
+
+  <h1 id ="worst" > The worst albums </h1>
+  <section class="worst-album">
+    <ul class="list-group list-group-flush">
+      
+        <li class="list-group-item">Country music</li>
+        <li class="list-group-item">Reagge</li>
+
+      </ul>
+</section>
+</main>
+
+
+
+<h1 id="admire">The band i admire a lot </h1>
+<div class="container-fluid container-lg px-0 px-lg-3">
+  <p> Ulver (Norwegian for "wolves") is a Norwegian experimental electronica band founded in 1993, by vocalist Kristoffer Rygg. Their early works, such as debut album Bergtatt, were categorised as folklore-influenced black metal, but the band has since evolved a fluid and increasingly eclectic musical style, blending genres such as experimental rock, electronica, ambient, trip hop, symphonic and chamber traditions, noise, progressive and experimental music into their oeuvre.[1] 1997 marked their international debut with the release of their third album Nattens madrigal through German label Century Media. However, following discord with the label, Kristoffer Rygg formed his own imprint, Jester Records, in 1998.[2]</p>
+<div class="row mb-10" class="media">
+  
+  
+  <a href="https://en.wikipedia.org/wiki/Ulver" class="wikipedia" target="blank" >Link to wikimedia</a><br>
+
+
+  
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/sq2h_PGomG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  
+
+  </div>
+
+
+<h1 id="tapestry">TAPESTRY</h1>
+  <div class="container-fluid" >
+    <div class="row mx-n5   row-cols-md-4 row-cols-lg-3 ">
+         
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdpRynMzc9zHz8roDLuKtVNlV3mym1PaSfKg&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7JenrF73LnOtE7EkfvyGG6-9dcg9-BMtfcA&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44WtBzCocSmEvHSJFjGdzBGoBE9JCg35VIg&usqp=CAU">
+     <img class="picture" src = "https://f4.bcbits.com/img/a3109035533_10.jpg">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR85M81VqYf4Ch2cru5dZyb-4ruag4eI4w2w&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbbSDMwyj8wavbl5vqkDvtFnscl7Mu22X7g&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GArK7WsbG9iVNE0i-PP4GuS_MMWDj2oz7w&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RG5cMUFs1R3eWHh5ec-aYAZXZrsXIJaLCQ&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44WtBzCocSmEvHSJFjGdzBGoBE9JCg35VIg&usqp=CAU">
+     <img class="picture" src = "https://f4.bcbits.com/img/a3109035533_10.jpg">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR85M81VqYf4Ch2cru5dZyb-4ruag4eI4w2w&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbbSDMwyj8wavbl5vqkDvtFnscl7Mu22X7g&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GArK7WsbG9iVNE0i-PP4GuS_MMWDj2oz7w&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RG5cMUFs1R3eWHh5ec-aYAZXZrsXIJaLCQ&usqp=CAU">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44WtBzCocSmEvHSJFjGdzBGoBE9JCg35VIg&usqp=CAU">
+     <img class="picture" src = "https://f4.bcbits.com/img/a3109035533_10.jpg">
+     <img class="picture" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR85M81VqYf4Ch2cru5dZyb-4ruag4eI4w2w&usqp=CAU">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbbSDMwyj8wavbl5vqkDvtFnscl7Mu22X7g&usqp=CAU">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GArK7WsbG9iVNE0i-PP4GuS_MMWDj2oz7w&usqp=CAU">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RG5cMUFs1R3eWHh5ec-aYAZXZrsXIJaLCQ&usqp=CAU">
+     <img class="picture" src = " https://f4.bcbits.com/img/a3109035533_10.jpg">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR85M81VqYf4Ch2cru5dZyb-4ruag4eI4w2w&usqp=CAU">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbbSDMwyj8wavbl5vqkDvtFnscl7Mu22X7g&usqp=CAU">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GArK7WsbG9iVNE0i-PP4GuS_MMWDj2oz7w&usqp=CAU">
+     <img class="picture" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS44WtBzCocSmEvHSJFjGdzBGoBE9JCg35VIg&usqp=CAU">
+
+  
+</div>
+</div>
+
+  <br>
+
+
+
+
+ <!-- EXERCISE 7
+        Add a "Contact Me" form in the footer.
+        The "Contact Me" form has 2 fields:
+        - Email
+        - Text of the message
+        Use the correct Bootstrap styles for styling the buttons
+    -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-6" > 
+      <span class="text-muted "> Contact Me </span>
+         <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text id=inputGroup-sizing-lg">write to me</span>
+            </div>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+      <button type="button" class="btn btn-dark">Send text</button>
+    </div>
+
+
+
+
+
+<!-- EXERCISE 8 
+        Add to the footer an extra column with the same links of the top nav.
+    -->
+
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-6" >//next column ///
+      <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+<div class="height">
+    <h3 class="text-center scroll"><a class="nav-link" href="#breadcrumb"> go UP!  </a>  </h3> 
+</div>
+    </div>
+     
+    
+
+    <hr>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small><button type="button" class="btn btn-dark">write yr email</button>
+    </div>
+
+
+
+
+  </div>
+</div>
+ 
+
+
+  
+
+    
+
+
+
+
+</body>
+</html>
